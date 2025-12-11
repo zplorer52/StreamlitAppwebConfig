@@ -22,7 +22,7 @@
     
     - **Note:** Order is required otherwise `(StreamLitApp)` won't be seen rather than `(venv)` in the console.
     
-    ```ps
+    ```PS
     PS C:\Users\username>mkdir StreamLitApp && cd StreamLitApp
     PS C:\Users\username\StreamLitApp>uv init --python 3.11.2
     Initialized project `StreamLitApp`
