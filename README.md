@@ -19,20 +19,32 @@
   - Internet Information Services Hostable Web Core
     
 **3. Create an Streamlit Application (UV and python Virtual Environment).**
+   - Install UV as Python Package manager.
+   [Use irm to download the script and execute it with iex:](https://docs.astral.sh/uv/getting-started/installation/)
+
+   ```PS
+   PS> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
     
-    - **Note:** Order is required otherwise `(StreamLitApp)` won't be seen rather than `(venv)` in the console.
+   - **Note:** Order is required otherwise `(StreamLitApp)` won't be seen rather than `(venv)` in the console.
     
-    ```PS
-    PS C:\Users\username>mkdir StreamLitApp && cd StreamLitApp
-    PS C:\Users\username\StreamLitApp>uv init --python 3.11.2
-    Initialized project `StreamLitApp`
-    PS C:\Users\username\StreamLitApp>uv venv --python 3.11.2
-    Using CPython 3.11.2 interpreter at: C:\Python311\python.exe
-    Creating virtual environment at: .venv
-    Activate with: .venv\Scripts\activate
-    PS C:\Users\username>\StreamLitApp>.venv\Scripts\activate
-    (StreamLitApp) PS C:\Users\username\StreamLitApp> uv add streamlit plotly plotly-express lxml openpyxl pyyml toml
-    ```
+       ```PS
+       PS C:\Users\username>mkdir StreamLitApp && cd StreamLitApp
+       PS C:\Users\username\StreamLitApp>uv init --python 3.11.2
+       Initialized project `StreamLitApp`
+       PS C:\Users\username\StreamLitApp>uv venv --python 3.11.2
+       Using CPython 3.11.2 interpreter at: C:\Python311\python.exe
+       Creating virtual environment at: .venv
+       Activate with: .venv\Scripts\activate
+       PS C:\Users\username>\StreamLitApp>.venv\Scripts\activate
+       (StreamLitApp) PS C:\Users\username\StreamLitApp> uv add streamlit plotly plotly-express lxml openpyxl pyyml toml
+       ```
+   - To deactivate virtual environment
+     
+      ```PS
+      (StreamLitApp) PS C:\Users\username\StreamLitApp>deactivate
+      PS C:\Users\username\StreamLitApp>  
+      ```
     
 **4. Basic Streamlit Application Template**
 
