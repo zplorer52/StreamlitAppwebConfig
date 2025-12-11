@@ -20,7 +20,8 @@
     
 **3. Create an Streamlit Application (UV and python Virtual Environment).**
     
-    Note: Order is required otherwise `(StreamLitApp)` won't be seen rather than `(venv)`.
+    - **Note:** Order is required otherwise `(StreamLitApp)` won't be seen rather than `(venv)` in the console.
+    
     ```ps
     PS C:\Users\username>mkdir StreamLitApp && cd StreamLitApp
     PS C:\Users\username\StreamLitApp>uv init --python 3.11.2
@@ -35,7 +36,7 @@
     
 **4. Basic Streamlit Application Template**
 
-   1. Add this to the main.py
+   1. Add this to the `main.py`
       
    ```py
    import streamlit as st
